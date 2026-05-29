@@ -1,0 +1,165 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    background: #d9e8d3;
+    padding: 20px;
+}
+
+main {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.main-nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-bottom: 25px;
+    flex-wrap: wrap;
+}
+
+.main-nav a {
+    display: block;
+    background: #2c6e2a;
+    color: white;
+    text-decoration: none;
+    padding: 10px 25px;
+    border-radius: 40px;
+    transition: 0.1s;
+}
+
+.main-nav a:hover {
+    background: #ffcc66;
+    color: #2c6e2a;
+}
+
+.main-nav a:active {
+    background: #b8860b;
+    transform: scale(0.95);
+}
+
+.page {
+    background: white;
+    padding: 25px;
+    border-radius: 30px;
+}
+
+h2 {
+    color: #2c6e2a;
+    margin-bottom: 20px;
+    border-left: 5px solid #8bc34a;
+    padding-left: 15px;
+}
+
+.spisok {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.punkt {
+    background: #f5f9f0;
+    padding: 12px;
+    border-radius: 20px;
+    border-left: 5px solid #8bc34a;
+    transition: 0.1s;
+}
+
+.punkt:hover {
+    background: #e8f0e0;
+    transform: translateX(5px);
+}
+
+.punkt:active {
+    background: #d0e0c4;
+    transform: translateX(2px);
+}
+
+.secret-card {
+    background: #f5f9f0;
+    border-radius: 30px;
+    padding: 25px;
+    text-align: center;
+}
+
+.secret-img {
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 20px;
+    background: #d0dcc4;
+}
+
+.secret-btn {
+    display: block;
+    background: #e6a817;
+    color: white;
+    border: none;
+    padding: 14px 30px;
+    border-radius: 50px;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    margin: 25px auto 0;
+    width: fit-content;
+    font-family: 'Inter', sans-serif;
+    transition: 0.2s;
+}
+
+.secret-btn:hover {
+    background: #cc8f0a;
+    transform: scale(1.05);
+}
+
+.secret-btn:active {
+    background: #b37a08;
+    transform: scale(0.95);
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    max-width: 400px;
+}
+
+.contact-form input, .contact-form textarea {
+    padding: 10px;
+    border: 1px solid #bdd8ac;
+    border-radius: 25px;
+    font-family: inherit;
+}
+
+.contact-form button {
+    background: #2874a6;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 40px;
+    cursor: pointer;
+}
+
+.contact-form button:hover {
+    background: #1a5a82;
+}
+
+@media (max-width: 600px) {
+    body {
+        padding: 10px;
+    }
+    .page {
+        padding: 15px;
+    }
+    .secret-img {
+        width: 200px;
+        height: 200px;
+    }
+}
